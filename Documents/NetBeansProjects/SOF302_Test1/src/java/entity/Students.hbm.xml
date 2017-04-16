@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 9, 2017 10:24:29 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Students" table="Students" schema="dbo" catalog="Personel" optimistic-lock="version">
+        <id name="masv" type="int">
+            <column name="masv" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="serializable">
+            <column name="name" />
+        </property>
+        <property name="mark" type="java.lang.Double">
+            <column name="mark" precision="53" scale="0" />
+        </property>
+        <property name="major" type="serializable">
+            <column name="major" />
+        </property>
+    </class>
+</hibernate-mapping>
